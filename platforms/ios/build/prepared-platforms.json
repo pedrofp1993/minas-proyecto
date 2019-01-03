@@ -55,7 +55,6 @@
     "is-object": true,
     "object-keys": true,
     "delayed-stream": true,
-    "safer-buffer": true,
     "foreach": true,
     "indexof": true,
     "is": true

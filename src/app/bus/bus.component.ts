@@ -103,7 +103,8 @@ export class BusComponent implements OnInit {
 
                                         ];
     private Asientos_sel = [];
-    private ConfiguracionIOS:any[] =[];
+    private ConfiguracionIOScol4:any[] =[{tamañomenora320: 43, tamañoentre320y375: 55, tamañomayora375: 65}];
+    private ConfiguracionIOScol5:any[] =[{tamañomenora320: 27, tamañoentre320y375: 35, tamañomayora375: 43}];
     private ConfiguracionAndroidcol4:any[] = [{tamañomenora320: 68, tamañomayora350: 82, tamañomayora400: 88}];
     private ConfiguracionAndroidcol5:any[] = [{tamañomenora320: 50, tamañomayora350: 60, tamañomayora400: 65}];
     constructor(private router: Router
@@ -114,6 +115,7 @@ export class BusComponent implements OnInit {
 
        this.anchoPantalla = screen.mainScreen.widthDIPs;
        console.log(this.anchoPantalla);
+       this.isIOS = isIOS;
        this.ponerImagen2();
     }
 
@@ -122,35 +124,25 @@ export class BusComponent implements OnInit {
         if(asiento.disponibilidad == 0){
             if(asiento.urlimage == "~/images/asiento4_sel.png")
             {
-              console.log(indice)
-              console.log("entra 1 4_sel");
                 this.index = this.Asientos_sel.findIndex(x => x.columna == asiento.columna && x.fila == asiento.fila);
-                console.log(this.index);
                 this.Asientos_sel.splice(this.index,1);
                 this.Asientos[indice].urlimage = "~/images/asiento4.png";
 
             }
             else if(asiento.urlimage == "~/images/asiento_sel.png")
             {
-              console.log("entra a sel");
                 this.index = this.Asientos_sel.findIndex(x => x.columna == asiento.columna && x.fila == asiento.fila);
-                console.log(this.index);
                 this.Asientos_sel.splice(this.index,1);
                 this.Asientos[indice].urlimage = "~/images/asiento.png";
 
             }
             else if(asiento.urlimage == "~/images/asiento4.png")
             {
-
-              console.log("entra a asiento4");
-              console.log(this.index);
                 this.Asientos_sel.push(asiento);
                 this.Asientos[indice].urlimage = "~/images/asiento4_sel.png";
             }
             else if(asiento.urlimage == "~/images/asiento.png")
             {
-              console.log("entra a asiento");
-              console.log(this.index);
                 this.Asientos_sel.push(asiento);
                 this.Asientos[indice].urlimage = "~/images/asiento_sel.png";
             }
@@ -177,7 +169,7 @@ export class BusComponent implements OnInit {
                     this.altoImagenniv1 = this.ConfiguracionAndroidcol4[0].tamañomenora320;
                     this.anchoImagenniv1 = this.ConfiguracionAndroidcol4[0].tamañomenora320;
 
-                } 
+                }
                 else if(350 < screen.mainScreen.widthDIPs && 400 > screen.mainScreen.widthDIPs)
                 {
                   //477
@@ -208,7 +200,7 @@ export class BusComponent implements OnInit {
                 {
                     this.altoImagenniv1 = this.ConfiguracionAndroidcol5[0].tamañomenora320;
                     this.anchoImagenniv1 = this.ConfiguracionAndroidcol5[0].tamañomenora320;
-                } 
+                }
                 else if(350 < screen.mainScreen.widthDIPs && 400 > screen.mainScreen.widthDIPs)
                 {
                   //477
@@ -241,7 +233,7 @@ export class BusComponent implements OnInit {
                     if(320 >= screen.mainScreen.widthDIPs){
                         this.altoImagenniv2 = this.ConfiguracionAndroidcol4[0].tamañomenora320;
                         this.anchoImagenniv2 = this.ConfiguracionAndroidcol4[0].tamañomenora320;
-                    } 
+                    }
                     else if(350 < screen.mainScreen.widthDIPs && 400 > screen.mainScreen.widthDIPs)
                     {
                   //477
@@ -269,7 +261,7 @@ export class BusComponent implements OnInit {
                 if(320 >= screen.mainScreen.widthDIPs){
                     this.altoImagenniv2 = this.ConfiguracionAndroidcol5[0].tamañomenora320;
                     this.anchoImagenniv2 = this.ConfiguracionAndroidcol5[0].tamañomenora320;
-                } 
+                }
                 else if(350 < screen.mainScreen.widthDIPs && 400 > screen.mainScreen.widthDIPs)
                 {
 
@@ -297,21 +289,19 @@ export class BusComponent implements OnInit {
         else if(isIOS){
           if(this.obtenercol1() == 4 && this.Asientos[i].nivel == 1)
           {
-            console.log("entra 1");
             if(320 >= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv1 = 43;
-              this.anchoImagenniv1 = 43;
-              console.log("entra 2");
+              this.altoImagenniv1 = this.ConfiguracionIOScol4[0].tamañomenora320;
+              this.anchoImagenniv1 = this.ConfiguracionIOScol4[0].tamañomenora320;
             }
             else if(320 <= screen.mainScreen.widthDIPs && 375 >= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv1 = 55;
-              this.anchoImagenniv1 = 55;
+              this.altoImagenniv1 = this.ConfiguracionIOScol4[0].tamañoentre320y375;
+              this.anchoImagenniv1 = this.ConfiguracionIOScol4[0].tamañoentre320y375;
             }
             else if(375 <= screen.mainScreen.widthDIPs){
-              this.altoImagenniv1 = 65;
-              this.anchoImagenniv1 = 65;
+              this.altoImagenniv1 = this.ConfiguracionIOScol4[0].tamañomayora375;
+              this.anchoImagenniv1 = this.ConfiguracionIOScol4[0].tamañomayora375;
             }
             if(this.Asientos[i].disponibilidad == 0)
             {
@@ -326,19 +316,18 @@ export class BusComponent implements OnInit {
           {
             if(320 >= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv1 = 25;
-              this.anchoImagenniv1 = 25;
-              console.log("entra 3");
+              this.altoImagenniv1 = this.ConfiguracionIOScol5[0].tamañomenora320;
+              this.anchoImagenniv1 = this.ConfiguracionIOScol5[0].tamañomenora320;
             }
             else if(320 <= screen.mainScreen.widthDIPs && 375 >= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv1 = 35;
-              this.anchoImagenniv1 = 35;
+              this.altoImagenniv1 = this.ConfiguracionIOScol5[0].tamañoentre320y375;
+              this.anchoImagenniv1 = this.ConfiguracionIOScol5[0].tamañoentre320y375;
             }
             else if(375 <= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv1 = 45;
-              this.anchoImagenniv1 = 45;
+              this.altoImagenniv1 = this.ConfiguracionIOScol5[0].tamañomayora375;
+              this.anchoImagenniv1 = this.ConfiguracionIOScol5[0].tamañomayora375;
             }
             if(this.Asientos[i].disponibilidad == 0)
             {
@@ -353,18 +342,17 @@ export class BusComponent implements OnInit {
           {
             if(320 >= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv2= 43;
-              this.anchoImagenniv2 = 43;
-              console.log("entra 4");
+              this.altoImagenniv2= this.ConfiguracionIOScol4[0].tamañomenora320;
+              this.anchoImagenniv2 = this.ConfiguracionIOScol4[0].tamañomenora320;
             }
             else if(320 <= screen.mainScreen.widthDIPs && 375 >= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv2 = 55;
-              this.anchoImagenniv2 = 55;
+              this.altoImagenniv2 = this.ConfiguracionIOScol4[0].tamañoentre320y375;
+              this.anchoImagenniv2 = this.ConfiguracionIOScol4[0].tamañoentre320y375;
             }
             else if(375 <= screen.mainScreen.widthDIPs){
-              this.altoImagenniv2 = 65;
-              this.anchoImagenniv2 = 65;
+              this.altoImagenniv2 = this.ConfiguracionIOScol4[0].tamañomayora375;
+              this.anchoImagenniv2 = this.ConfiguracionIOScol4[0].tamañomayora375;
             }
             if(this.Asientos[i].disponibilidad == 0)
             {
@@ -379,19 +367,18 @@ export class BusComponent implements OnInit {
           {
             if(320 >= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv2 = 25;
-              this.anchoImagenniv2 = 25;
-              console.log("entra 5");
+              this.altoImagenniv2 = this.ConfiguracionIOScol5[0].tamañomenora320;
+              this.anchoImagenniv2 = this.ConfiguracionIOScol5[0].tamañomenora320;
             }
             else if(320 <= screen.mainScreen.widthDIPs && 375 >= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv2 = 35;
-              this.anchoImagenniv2 = 35;
+              this.altoImagenniv2 = this.ConfiguracionIOScol5[0].tamañoentre320y375;
+              this.anchoImagenniv2 = this.ConfiguracionIOScol5[0].tamañoentre320y375;
             }
             else if(414 <= screen.mainScreen.widthDIPs)
             {
-              this.altoImagenniv2 = 40;
-              this.anchoImagenniv2 = 40;
+              this.altoImagenniv2 = this.ConfiguracionIOScol5[0].tamañomayora375;
+              this.anchoImagenniv2 = this.ConfiguracionIOScol5[0].tamañomayora375;
             }
             if(this.Asientos[i].disponibilidad == 0)
             {
