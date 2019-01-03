@@ -364,7 +364,7 @@ var AppModule = /** @class */ (function () {
 /***/ "./app/bus/bus.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n        <ScrollView>\n                <GridLayout  columns=\"*\" rows=\"auto,auto,auto\"   width=\"100%\"  backgroundColor=\"lightgray\">\n\n                        <GridLayout col=\"0\" row=\"0\" class=\"grid\"   *ngIf=\"columnaniv1==4 \" verticalAlignment=\"top\"  columns=\"auto,auto,auto,auto\" rows=\"auto,auto,auto,auto\" backgroundColor=\"lightgray\" border=\"100\" border-color=\"blue\">\n                                <template *ngFor=\"let asiento of Asientos;let indice = index\">\n                                        <template *ngIf=\"asiento.nivel==1\">\n                                                <Image class=\"Img\" (tap)=\"rabus(asiento,indice)\" [col]=\"asiento.columna\" [row]=\"asiento.fila\" [src]=\"asiento.urlimage\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" [width]=\"anchoImagenniv1\" [height]=\"altoImagenniv1\" ></Image>\n                                                <Image [col]=\"2\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\" margin=\"10\"></Image>\n                                        </template>\n                                </template>\n                        </GridLayout>\n\n                        <GridLayout col=\"0\" row=\"0\" class=\"grid\"    *ngIf=\"columnaniv1==5\" verticalAlignment=\"top\"  columns=\"auto,auto,auto,auto,auto\" rows=\"auto,auto,auto,auto\" backgroundColor=\"lightgray\" border=\"100\" border-color=\"blue\">\n                                <template *ngFor=\"let asiento of Asientos;let indice = index\">\n                                        <template *ngIf=\"asiento.nivel==1\">\n                                                <Image class=\"Img\" (tap)=\"rabus(asiento,indice)\" [col]=\"asiento.columna\" [row]=\"asiento.fila\" [src]=\"asiento.urlimage\"   class=\"img-rounded p-l-15 p-r-15 p-t-15\"   [width]=\"anchoImagenniv1\" [height]=\"altoImagenniv1\" margin=\"10\"></Image>\n                                                <Image [col]=\"2\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\" ></Image>\n                                                <Image [col]=\"3\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\"></Image>\n                                        </template>\n                                </template>\n                        </GridLayout>\n\n                        <GridLayout col=\"0\" row=\"1\" class=\"grid\"   *ngIf=\"columnaniv2==4\" verticalAlignment=\"top\"  columns=\"auto,auto,auto,auto\" rows=\"auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto\" backgroundColor=\"lightgray\" border=\"100\" border-color=\"blue\">\n                                <template *ngFor=\"let asiento of Asientos;let indice = index\">\n                                        <template *ngIf=\"asiento.nivel==2\">\n                                                <Image class=\"Img\" (tap)=\"rabus(asiento,indice)\" [col]=\"asiento.columna\"  [row]=\"asiento.fila\" [src]=\"asiento.urlimage\" class=\"img-rounded p-l-15 p-r-15 p-t-15\" [width]=\"anchoImagenniv2\" [height]=\"altoImagenniv2\" margin=\"10\"></Image>\n                                                <Image [col]=\"2\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\" ></Image>\n                                        </template>\n                                </template>\n                        </GridLayout>\n\n                        <GridLayout col=\"0\" row=\"1\" class=\"grid\"   *ngIf=\"columnaniv2==5 \" verticalAlignment=\"top\"  columns=\"auto,auto,auto,auto,auto\" rows=\"auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto\" backgroundColor=\"lightgray\" border=\"100\" border-color=\"blue\">\n                                <template *ngFor=\"let asiento of Asientos;let indice = index\">\n                                        <template *ngIf=\"asiento.nivel==2\">\n                                                <Image class=\"Img\" (tap)=\"rabus(asiento,indice)\" [col]=\"asiento.columna\" [row]=\"asiento.fila\" [src]=\"asiento.urlimage\" class=\"img-rounded p-l-15 p-r-15 p-t-15\" [width]=\"anchoImagenniv2\" [height]=\"altoImagenniv2\" margin-right=\"7\"></Image>\n                                                <Image [col]=\"2\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\" ></Image>\n                                        </template>\n                                </template>\n                        </GridLayout>\n\n                        <Button col=\"0\" row=\"2\" text=\"Log In\" class=\"btn btn-primary\" (tap)=\"iraCarritoCompra()\" ></Button>\n\n                </GridLayout>\n        </ScrollView>\n"
+module.exports = "\n        <ScrollView>\n                <GridLayout  columns=\"*\" rows=\"auto,auto,auto\"   width=\"100%\"  backgroundColor=\"lightgray\">\n\n                        <GridLayout col=\"0\" row=\"0\" class=\"grid\"   *ngIf=\"columnaniv1==4 \" verticalAlignment=\"top\"  columns=\"auto,auto,auto,auto\" rows=\"auto,auto,auto,auto\" backgroundColor=\"lightgray\" border=\"100\" border-color=\"blue\">\n                                <template *ngFor=\"let asiento of Asientos;let indice = index\">\n                                        <template *ngIf=\"asiento.nivel==1\">\n                                                <Image class=\"Img\" (tap)=\"rabus(asiento,indice)\" [col]=\"asiento.columna\" [row]=\"asiento.fila\" [src]=\"asiento.urlimage\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" [width]=\"anchoImagenniv1\" [height]=\"altoImagenniv1\" margin-right=\"7\"></Image>\n                                                <Image [col]=\"2\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\" margin=\"10\"></Image>\n                                        </template>\n                                </template>\n                        </GridLayout>\n\n                        <GridLayout col=\"0\" row=\"0\" class=\"grid\"    *ngIf=\"columnaniv1==5\" verticalAlignment=\"top\"  columns=\"auto,auto,auto,auto,auto\" rows=\"auto,auto,auto,auto\" backgroundColor=\"lightgray\" border=\"100\" border-color=\"blue\">\n                                <template *ngFor=\"let asiento of Asientos;let indice = index\">\n                                        <template *ngIf=\"asiento.nivel==1\">\n                                                <Image class=\"Img\" (tap)=\"rabus(asiento,indice)\" [col]=\"asiento.columna\" [row]=\"asiento.fila\" [src]=\"asiento.urlimage\"   class=\"img-rounded p-l-15 p-r-15 p-t-15\"   [width]=\"anchoImagenniv1\" [height]=\"altoImagenniv1\" margin-right=\"7\"></Image>\n                                                <Image [col]=\"2\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\" ></Image>\n                                                <Image [col]=\"3\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\"></Image>\n                                        </template>\n                                </template>\n                        </GridLayout>\n\n                        <GridLayout col=\"0\" row=\"1\" class=\"grid\"   *ngIf=\"columnaniv2==4\" verticalAlignment=\"top\"  columns=\"auto,auto,auto,auto\" rows=\"auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto\" backgroundColor=\"lightgray\" border=\"100\" border-color=\"blue\">\n                                <template *ngFor=\"let asiento of Asientos;let indice = index\">\n                                        <template *ngIf=\"asiento.nivel==2\">\n                                                <Image class=\"Img\" (tap)=\"rabus(asiento,indice)\" [col]=\"asiento.columna\"  [row]=\"asiento.fila\" [src]=\"asiento.urlimage\" class=\"img-rounded p-l-15 p-r-15 p-t-15\" [width]=\"anchoImagenniv2\" [height]=\"altoImagenniv2\" margin-right=\"7\"></Image>\n                                                <Image [col]=\"2\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\" ></Image>\n                                        </template>\n                                </template>\n                        </GridLayout>\n\n                        <GridLayout col=\"0\" row=\"1\" class=\"grid\"   *ngIf=\"columnaniv2==5 \" verticalAlignment=\"top\"  columns=\"auto,auto,auto,auto,auto\" rows=\"auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto\" backgroundColor=\"lightgray\" border=\"100\" border-color=\"blue\">\n                                <template *ngFor=\"let asiento of Asientos;let indice = index\">\n                                        <template *ngIf=\"asiento.nivel==2\">\n                                                <Image class=\"Img\" (tap)=\"rabus(asiento,indice)\" [col]=\"asiento.columna\" [row]=\"asiento.fila\" [src]=\"asiento.urlimage\" class=\"img-rounded p-l-15 p-r-15 p-t-15\" [width]=\"anchoImagenniv2\" [height]=\"altoImagenniv2\" margin-right=\"7\"></Image>\n                                                <Image [col]=\"2\" [row]=\"asiento.fila\" src=\"~/images/clg.png\"  class=\"img-rounded p-l-15 p-r-15 p-t-15\" width=\"20\" height=\"20\" ></Image>\n                                        </template>\n                                </template>\n                        </GridLayout>\n\n                        <Button col=\"0\" row=\"2\" text=\"Log In\" class=\"btn btn-primary\" (tap)=\"iraCarritoCompra()\" ></Button>\n\n                </GridLayout>\n        </ScrollView>\n"
 
 /***/ }),
 
@@ -450,42 +450,35 @@ var BusComponent = /** @class */ (function () {
             { nivel: 2, fila: 11, columna: 4, tipo: 'A', disponibilidad: 1, urlimage: "" },
         ];
         this.Asientos_sel = [];
-        this.ConfiguracionIOS = [];
-        this.ConfiguracionAndroidcol4 = [{ tamañomenora320: 68, tamañomayora350: 82, tamañomayora400: 82 }];
+        this.ConfiguracionIOScol4 = [{ tamañomenora320: 43, tamañoentre320y375: 55, tamañomayora375: 65 }];
+        this.ConfiguracionIOScol5 = [{ tamañomenora320: 27, tamañoentre320y375: 35, tamañomayora375: 43 }];
+        this.ConfiguracionAndroidcol4 = [{ tamañomenora320: 68, tamañomayora350: 82, tamañomayora400: 80 }];
         this.ConfiguracionAndroidcol5 = [{ tamañomenora320: 50, tamañomayora350: 60, tamañomayora400: 65 }];
     }
     BusComponent.prototype.ngOnInit = function () {
         this.anchoPantalla = tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs;
         console.log(this.anchoPantalla);
+        this.isIOS = tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["isIOS"];
         this.ponerImagen2();
     };
     BusComponent.prototype.rabus = function (asiento, indice) {
         this.index = 0;
         if (asiento.disponibilidad == 0) {
             if (asiento.urlimage == "~/images/asiento4_sel.png") {
-                console.log(indice);
-                console.log("entra 1 4_sel");
                 this.index = this.Asientos_sel.findIndex(function (x) { return x.columna == asiento.columna && x.fila == asiento.fila; });
-                console.log(this.index);
                 this.Asientos_sel.splice(this.index, 1);
                 this.Asientos[indice].urlimage = "~/images/asiento4.png";
             }
             else if (asiento.urlimage == "~/images/asiento_sel.png") {
-                console.log("entra a sel");
                 this.index = this.Asientos_sel.findIndex(function (x) { return x.columna == asiento.columna && x.fila == asiento.fila; });
-                console.log(this.index);
                 this.Asientos_sel.splice(this.index, 1);
                 this.Asientos[indice].urlimage = "~/images/asiento.png";
             }
             else if (asiento.urlimage == "~/images/asiento4.png") {
-                console.log("entra a asiento4");
-                console.log(this.index);
                 this.Asientos_sel.push(asiento);
                 this.Asientos[indice].urlimage = "~/images/asiento4_sel.png";
             }
             else if (asiento.urlimage == "~/images/asiento.png") {
-                console.log("entra a asiento");
-                console.log(this.index);
                 this.Asientos_sel.push(asiento);
                 this.Asientos[indice].urlimage = "~/images/asiento_sel.png";
             }
@@ -590,19 +583,17 @@ var BusComponent = /** @class */ (function () {
             }
             else if (tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["isIOS"]) {
                 if (this.obtenercol1() == 4 && this.Asientos[i].nivel == 1) {
-                    console.log("entra 1");
                     if (320 >= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv1 = 43;
-                        this.anchoImagenniv1 = 43;
-                        console.log("entra 2");
+                        this.altoImagenniv1 = this.ConfiguracionIOScol4[0].tamañomenora320;
+                        this.anchoImagenniv1 = this.ConfiguracionIOScol4[0].tamañomenora320;
                     }
                     else if (320 <= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs && 375 >= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv1 = 55;
-                        this.anchoImagenniv1 = 55;
+                        this.altoImagenniv1 = this.ConfiguracionIOScol4[0].tamañoentre320y375;
+                        this.anchoImagenniv1 = this.ConfiguracionIOScol4[0].tamañoentre320y375;
                     }
                     else if (375 <= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv1 = 65;
-                        this.anchoImagenniv1 = 65;
+                        this.altoImagenniv1 = this.ConfiguracionIOScol4[0].tamañomayora375;
+                        this.anchoImagenniv1 = this.ConfiguracionIOScol4[0].tamañomayora375;
                     }
                     if (this.Asientos[i].disponibilidad == 0) {
                         this.Asientos[i].urlimage = "~/images/asiento4.png";
@@ -613,17 +604,16 @@ var BusComponent = /** @class */ (function () {
                 }
                 else if (this.obtenercol1() == 5 && this.Asientos[i].nivel == 1) {
                     if (320 >= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv1 = 25;
-                        this.anchoImagenniv1 = 25;
-                        console.log("entra 3");
+                        this.altoImagenniv1 = this.ConfiguracionIOScol5[0].tamañomenora320;
+                        this.anchoImagenniv1 = this.ConfiguracionIOScol5[0].tamañomenora320;
                     }
                     else if (320 <= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs && 375 >= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv1 = 35;
-                        this.anchoImagenniv1 = 35;
+                        this.altoImagenniv1 = this.ConfiguracionIOScol5[0].tamañoentre320y375;
+                        this.anchoImagenniv1 = this.ConfiguracionIOScol5[0].tamañoentre320y375;
                     }
                     else if (375 <= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv1 = 45;
-                        this.anchoImagenniv1 = 45;
+                        this.altoImagenniv1 = this.ConfiguracionIOScol5[0].tamañomayora375;
+                        this.anchoImagenniv1 = this.ConfiguracionIOScol5[0].tamañomayora375;
                     }
                     if (this.Asientos[i].disponibilidad == 0) {
                         this.Asientos[i].urlimage = "~/images/asiento.png";
@@ -634,17 +624,16 @@ var BusComponent = /** @class */ (function () {
                 }
                 if (this.obtenercol2() == 4 && this.Asientos[i].nivel == 2) {
                     if (320 >= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv2 = 43;
-                        this.anchoImagenniv2 = 43;
-                        console.log("entra 4");
+                        this.altoImagenniv2 = this.ConfiguracionIOScol4[0].tamañomenora320;
+                        this.anchoImagenniv2 = this.ConfiguracionIOScol4[0].tamañomenora320;
                     }
                     else if (320 <= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs && 375 >= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv2 = 55;
-                        this.anchoImagenniv2 = 55;
+                        this.altoImagenniv2 = this.ConfiguracionIOScol4[0].tamañoentre320y375;
+                        this.anchoImagenniv2 = this.ConfiguracionIOScol4[0].tamañoentre320y375;
                     }
                     else if (375 <= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv2 = 65;
-                        this.anchoImagenniv2 = 65;
+                        this.altoImagenniv2 = this.ConfiguracionIOScol4[0].tamañomayora375;
+                        this.anchoImagenniv2 = this.ConfiguracionIOScol4[0].tamañomayora375;
                     }
                     if (this.Asientos[i].disponibilidad == 0) {
                         this.Asientos[i].urlimage = "~/images/asiento4.png";
@@ -655,17 +644,16 @@ var BusComponent = /** @class */ (function () {
                 }
                 else if (this.obtenercol2() == 5 && this.Asientos[i].nivel == 2) {
                     if (320 >= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv2 = 25;
-                        this.anchoImagenniv2 = 25;
-                        console.log("entra 5");
+                        this.altoImagenniv2 = this.ConfiguracionIOScol5[0].tamañomenora320;
+                        this.anchoImagenniv2 = this.ConfiguracionIOScol5[0].tamañomenora320;
                     }
                     else if (320 <= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs && 375 >= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv2 = 35;
-                        this.anchoImagenniv2 = 35;
+                        this.altoImagenniv2 = this.ConfiguracionIOScol5[0].tamañoentre320y375;
+                        this.anchoImagenniv2 = this.ConfiguracionIOScol5[0].tamañoentre320y375;
                     }
                     else if (414 <= tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs) {
-                        this.altoImagenniv2 = 40;
-                        this.anchoImagenniv2 = 40;
+                        this.altoImagenniv2 = this.ConfiguracionIOScol5[0].tamañomayora375;
+                        this.anchoImagenniv2 = this.ConfiguracionIOScol5[0].tamañomayora375;
                     }
                     if (this.Asientos[i].disponibilidad == 0) {
                         this.Asientos[i].urlimage = "~/images/asiento.png";

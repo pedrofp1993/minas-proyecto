@@ -106,7 +106,7 @@ export class BusComponent implements OnInit {
 
     private ConfiguracionIOScol4:any[] =[{tamañomenora320: 43, tamañoentre320y375: 55, tamañomayora375: 65}];
     private ConfiguracionIOScol5:any[] =[{tamañomenora320: 27, tamañoentre320y375: 35, tamañomayora375: 43}];
-    private ConfiguracionAndroidcol4:any[] = [{tamañomenora320: 68, tamañomayora350: 82, tamañomayora400: 88}];
+    private ConfiguracionAndroidcol4:any[] = [{tamañomenora320: 68, tamañomayora350: 82, tamañomayora400: 80}];
     private ConfiguracionAndroidcol5:any[] = [{tamañomenora320: 50, tamañomayora350: 60, tamañomayora400: 65}];
     constructor(private router: Router
 
