@@ -104,7 +104,7 @@ export class BusComponent implements OnInit {
                                         ];
     private Asientos_sel = [];
     private ConfiguracionIOS:any[] =[];
-    private ConfiguracionAndroidcol4:any[] = [{tamañomenora320: 68, tamañomayora350: 82, tamañomayora400: 88}];
+    private ConfiguracionAndroidcol4:any[] = [{tamañomenora320: 68, tamañomayora350: 82, tamañomayora400: 82}];
     private ConfiguracionAndroidcol5:any[] = [{tamañomenora320: 50, tamañomayora350: 60, tamañomayora400: 65}];
     constructor(private router: Router
 
