@@ -1,0 +1,12 @@
+<ActionBar title="Details" class="action-bar"></ActionBar>
+<TextField hint="Enter date" 
+           [text]='birthDate | date:"MM/dd/yy"' 
+           secure="false"
+           keyboardType="datetime"
+           returnKeyType="done" 
+           (returnPress)="onReturnPress($event)"
+           autocorrect="false"
+           maxLength="10"
+           (focus)="onFocus($event)" 
+           (blur)="onBlur($event)" 
+           class="input input-border"></TextField>

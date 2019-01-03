@@ -1,0 +1,94 @@
+
+<Page *ngIf="!isIOS" xlmns="http://schemas.nativescript.org/tns.xsd">
+        <ScrollView>
+                <GridLayout  columns="*" rows="auto,auto,auto"   width="100%"  backgroundColor="lightgray">
+
+                        <GridLayout col="0" row="0" class="grid"   *ngIf="columnaniv1==4 " verticalAlignment="top"  columns="auto,auto,auto,auto" rows="auto,auto,auto,auto" backgroundColor="lightgray" border="100" border-color="blue">
+                                <template *ngFor="let asiento of Asientos;let indice = index">
+                                        <template *ngIf="asiento.nivel==1">
+                                                <Image class="Img" (tap)="rabus(asiento,indice)" [col]="asiento.columna" [row]="asiento.fila" [src]="asiento.urlimage"  class="img-rounded p-l-15 p-r-15 p-t-15" [width]="anchoImagenniv1" [height]="altoImagenniv1" ></Image>
+                                                <Image [col]="2" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="40" height="40"></Image>
+                                        </template>
+                                </template>
+                        </GridLayout>
+
+                        <GridLayout col="0" row="0" class="grid"    *ngIf="columnaniv1==5" verticalAlignment="top"  columns="auto,auto,auto,auto,auto" rows="auto,auto,auto,auto" backgroundColor="lightgray" border="100" border-color="blue">
+                                <template *ngFor="let asiento of Asientos;let indice = index">
+                                        <template *ngIf="asiento.nivel==1">
+                                                <Image class="Img" (tap)="rabus(asiento,indice)" [col]="asiento.columna" [row]="asiento.fila" [src]="asiento.urlimage"   class="img-rounded p-l-15 p-r-15 p-t-15"   [width]="anchoImagenniv1" [height]="altoImagenniv1" ></Image>
+                                                <Image [col]="2" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="40" height="40" ></Image>
+                                                <Image [col]="3" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="40" height="40"></Image>
+                                        </template>
+                                </template>
+                        </GridLayout>
+
+                        <GridLayout col="0" row="1" class="grid"   *ngIf="columnaniv2==4" verticalAlignment="top"  columns="auto,auto,auto,auto" rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" backgroundColor="lightgray" border="100" border-color="blue">
+                                <template *ngFor="let asiento of Asientos;let indice = index">
+                                        <template *ngIf="asiento.nivel==2">
+                                                <Image class="Img" (tap)="rabus(asiento,indice)" [col]="asiento.columna"  [row]="asiento.fila" [src]="asiento.urlimage" class="img-rounded p-l-15 p-r-15 p-t-15" [width]="anchoImagenniv2" [height]="altoImagenniv2" ></Image>
+                                                <Image [col]="2" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="40" height="40" ></Image>
+                                        </template>
+                                </template>
+                        </GridLayout>
+
+                        <GridLayout col="0" row="1" class="grid"   *ngIf="columnaniv2==5 " verticalAlignment="top"  columns="auto,auto,auto,auto,auto" rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" backgroundColor="lightgray" border="100" border-color="blue">
+                                <template *ngFor="let asiento of Asientos;let indice = index">
+                                        <template *ngIf="asiento.nivel==2">
+                                                <Image class="Img" (tap)="rabus(asiento,indice)" [col]="asiento.columna" [row]="asiento.fila" [src]="asiento.urlimage" class="img-rounded p-l-15 p-r-15 p-t-15" [width]="anchoImagenniv2" [height]="altoImagenniv2" ></Image>
+                                                <Image [col]="2" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="20" height="20"></Image>
+                                        </template>
+                                </template>
+                        </GridLayout>
+
+                        <Button col="0" row="2" text="Log In" class="btn btn-primary" ></Button>
+
+                </GridLayout>
+        </ScrollView>
+
+</Page>
+<template *ngIf="isIOS">
+  <ScrollView>
+          <GridLayout  columns="*" rows="auto,auto,auto"   width="100%"  backgroundColor="lightgray">
+
+                  <GridLayout col="0" row="0" class="grid"   *ngIf="columnaniv1==4 " verticalAlignment="top"  columns="auto,auto,auto,auto" rows="auto,auto,auto,auto" backgroundColor="lightgray" border="100" border-color="blue">
+                          <template *ngFor="let asiento of Asientos;let indice = index">
+                                  <template *ngIf="asiento.nivel==1">
+                                          <Image class="Img" (tap)="rabus(asiento,indice)" [col]="asiento.columna" [row]="asiento.fila" [src]="asiento.urlimage"  class="img-rounded p-l-15 p-r-15 p-t-15" [width]="anchoImagenniv1" [height]="altoImagenniv1" margin="5"></Image>
+                                          <Image [col]="2" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="60" height="60"></Image>
+                                  </template>
+                          </template>
+                  </GridLayout>
+
+                  <GridLayout col="0" row="0" class="grid"    *ngIf="columnaniv1==5" verticalAlignment="top"  columns="auto,auto,auto,auto,auto" rows="auto,auto,auto,auto" backgroundColor="lightgray" border="100" border-color="blue">
+                          <template *ngFor="let asiento of Asientos;let indice = index">
+                                  <template *ngIf="asiento.nivel==1">
+                                          <Image class="Img" (tap)="rabus(asiento,indice)" [col]="asiento.columna" [row]="asiento.fila" [src]="asiento.urlimage"   class="img-rounded p-l-15 p-r-15 p-t-15"   [width]="anchoImagenniv1" [height]="altoImagenniv1" margin="5">></Image>
+                                          <Image [col]="2" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="40" height="40" ></Image>
+                                          <Image [col]="3" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="40" height="40"></Image>
+                                  </template>
+                          </template>
+                  </GridLayout>
+
+                  <GridLayout col="0" row="1" class="grid"   *ngIf="columnaniv2==4" verticalAlignment="top"  columns="auto,auto,auto,auto" rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" backgroundColor="lightgray" border="100" border-color="blue">
+                          <template *ngFor="let asiento of Asientos;let indice = index">
+                                  <template *ngIf="asiento.nivel==2">
+                                          <Image class="Img" (tap)="rabus(asiento,indice)" [col]="asiento.columna"  [row]="asiento.fila" [src]="asiento.urlimage" class="img-rounded p-l-15 p-r-15 p-t-15" [width]="anchoImagenniv2" [height]="altoImagenniv2" margin="5">></Image>
+                                          <Image [col]="2" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="40" height="40" ></Image>
+                                  </template>
+                          </template>
+                  </GridLayout>
+
+                  <GridLayout col="0" row="1" class="grid"   *ngIf="columnaniv2==5 " verticalAlignment="top"  columns="auto,auto,auto,auto,auto" rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" backgroundColor="lightgray" border="100" border-color="blue">
+                          <template *ngFor="let asiento of Asientos;let indice = index">
+                                  <template *ngIf="asiento.nivel==2">
+                                          <Image class="Img" (tap)="rabus(asiento,indice)" [col]="asiento.columna" [row]="asiento.fila" [src]="asiento.urlimage" class="img-rounded p-l-15 p-r-15 p-t-15" [width]="anchoImagenniv2" [height]="altoImagenniv2" margin="10"></Image>
+                                          <Image [col]="2" [row]="asiento.fila" src="~/images/clg.png"  class="img-rounded p-l-15 p-r-15 p-t-15" width="35" height="40"></Image>
+                                  </template>
+                          </template>
+                  </GridLayout>
+
+                  <Button col="0" row="2" text="Log In" class="btn btn-primary" ></Button>
+
+          </GridLayout>
+  </ScrollView>
+</template>
