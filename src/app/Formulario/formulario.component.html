@@ -1,0 +1,64 @@
+<scrollView>
+    <StackLayout  orientation="vertical">
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+            <label class="texto" text="Piso:" ></label>
+            <TextField class= "fiel" ></TextField>
+            <label class="texto" text="Zona:" ></label>
+            <TextField class= "fiel" ></TextField>
+            <label class="texto" text="Asiento:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Origen:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+            <ListPicker [items]="agencia_origen" selectedIndex="0" width=75%></ListPicker>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Destino:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+            <ListPicker [items]="agencia_destino" selectedIndex="0" width=75%></ListPicker>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <ListPicker [items]="tipos_documentos" selectedIndex="0" width=75%></ListPicker>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <ListPicker [items]="tipos_documentos" selectedIndex="0" width=75%></ListPicker>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Documento de Identidad" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <ListPicker [items]="tipos_documentos" selectedIndex="0" width=75%></ListPicker>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <TextField class= "fiel2" ></TextField>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Apellido Paterno:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+            <TextField class= "fiel2" ></TextField>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Apellido Materno:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <TextField class= "fiel2" ></TextField>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Nombres:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+            <TextField class= "fiel2" ></TextField>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+            <label class="texto2" text="Fecha de nacimiento:" ></label>
+            <label class="texto" text="Edad:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+            <TextField class= "fiel3" ></TextField>
+            <TextField class= "fiel3" ></TextField>
+        </StackLayout>
+    </StackLayout>
+</scrollView>

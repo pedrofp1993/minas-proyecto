@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import { BusComponent } from './bus/bus.component';
+import { FormularioComponent } from './Formulario/formulario.component';
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
@@ -25,7 +26,8 @@ import { BusComponent } from './bus/bus.component';
         ItemsComponent,
         ItemDetailComponent,
         BusComponent,
-        CarritoCompraComponent
+        CarritoCompraComponent,
+        FormularioComponent
     ],
     providers: [],
     schemas: [

@@ -1,0 +1,27 @@
+  .fiel{
+    border-width: 3px;
+    width:15%;
+    margin-top:10px;
+  }
+  .fiel2{
+      width:75%;
+      margin-top:10px;
+      border-width: 3px;
+  }
+  .fiel3{
+    width:38%;
+    margin-top:10px;
+    border-width: 3px;
+    margin-left:20px;
+    }
+  .texto{
+      vertical-align: middle;
+      margin-top:15px;
+      margin-right: 10px;
+      margin-left  : 10px;
+  }
+  .texto2{
+    vertical-align: middle;
+    margin-top:15px;
+    margin-right: 20%;
+}
