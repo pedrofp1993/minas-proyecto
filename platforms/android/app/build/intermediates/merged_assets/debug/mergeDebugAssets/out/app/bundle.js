@@ -222,6 +222,50 @@ var CarritoCompraComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./app/Formulario/formulario.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<scrollView>\r\n    <StackLayout  orientation=\"vertical\">\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <label class=\"texto\" text=\"Piso:\" ></label>\r\n            <TextField class= \"fiel\" ></TextField>\r\n            <label class=\"texto\" text=\"Zona:\" ></label>\r\n            <TextField class= \"fiel\" ></TextField>\r\n            <label class=\"texto\" text=\"Asiento:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Origen:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <ListPicker [items]=\"agencia_origen\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Destino:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <ListPicker [items]=\"agencia_destino\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"tipos_documentos\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"tipos_documentos\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Documento de Identidad\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"tipos_documentos\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField class= \"fiel2\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Apellido Paterno:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <TextField class= \"fiel2\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Apellido Materno:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField class= \"fiel2\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Nombres:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <TextField class= \"fiel2\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <label class=\"texto2\" text=\"Fecha de nacimiento:\" ></label>\r\n            <label class=\"texto\" text=\"Edad:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <TextField class= \"fiel3\" ></TextField>\r\n            <TextField class= \"fiel3\" ></TextField>\r\n        </StackLayout>\r\n    </StackLayout>\r\n</scrollView>"
+
+/***/ }),
+
+/***/ "./app/Formulario/formulario.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormularioComponent", function() { return FormularioComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+
+var FormularioComponent = /** @class */ (function () {
+    function FormularioComponent() {
+        this.agencia_origen = ["Arequipa", "Lima", "Guayaquil"];
+        this.agencia_destino = ["Arequipa", "Lima", "Guayaquil"];
+        this.tipos_documentos = ["DNI", "CI", "CC", "TI", "CE"];
+    }
+    FormularioComponent.prototype.ngOnInit = function () {
+    };
+    FormularioComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "ns-details",
+            template: __webpack_require__("./app/Formulario/formulario.component.html"),
+            styles: [__webpack_require__("./app/Formulario/formulario.css")]
+        })
+    ], FormularioComponent);
+    return FormularioComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./app/Formulario/formulario.css":
+/***/ (function(module, exports) {
+
+module.exports = "  .fiel{\r\n    border-width: 3px;\r\n    width:15%;\r\n    margin-top:10px;\r\n  }\r\n  .fiel2{\r\n      width:75%;\r\n      margin-top:10px;\r\n      border-width: 3px;\r\n  }\r\n  .fiel3{\r\n    width:38%;\r\n    margin-top:10px;\r\n    border-width: 3px;\r\n    margin-left:20px;\r\n    }\r\n  .texto{\r\n      vertical-align: middle;\r\n      margin-top:15px;\r\n      margin-right: 10px;\r\n      margin-left  : 10px;\r\n  }\r\n  .texto2{\r\n    vertical-align: middle;\r\n    margin-top:15px;\r\n    margin-right: 20%;\r\n}"
+
+/***/ }),
+
 /***/ "./app/app-routing.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -235,6 +279,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _item_items_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./app/item/items.component.ts");
 /* harmony import */ var _item_item_detail_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./app/item/item-detail.component.ts");
 /* harmony import */ var _bus_bus_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./app/bus/bus.component.ts");
+/* harmony import */ var _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./app/Formulario/formulario.component.ts");
+
 
 
 
@@ -242,12 +288,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: "", redirectTo: "/bus", pathMatch: "full" },
+    { path: "", redirectTo: "/formulario", pathMatch: "full" },
     { path: "bus", component: _bus_bus_component__WEBPACK_IMPORTED_MODULE_5__["BusComponent"] },
     { path: "item/:id", component: _item_item_detail_component__WEBPACK_IMPORTED_MODULE_4__["ItemDetailComponent"] },
     { path: "item", component: _item_items_component__WEBPACK_IMPORTED_MODULE_3__["ItemsComponent"] },
     { path: "bus", component: _bus_bus_component__WEBPACK_IMPORTED_MODULE_5__["BusComponent"] },
-    { path: "CarritoCompra", component: _CarritoCompra_CarritoCompra_component__WEBPACK_IMPORTED_MODULE_2__["CarritoCompraComponent"] }
+    { path: "CarritoCompra", component: _CarritoCompra_CarritoCompra_component__WEBPACK_IMPORTED_MODULE_2__["CarritoCompraComponent"] },
+    { path: "formulario", component: _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_6__["FormularioComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -311,6 +358,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _item_items_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./app/item/items.component.ts");
 /* harmony import */ var _item_item_detail_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./app/item/item-detail.component.ts");
 /* harmony import */ var _bus_bus_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./app/bus/bus.component.ts");
+/* harmony import */ var _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("./app/Formulario/formulario.component.ts");
+
 
 
 
@@ -343,7 +392,8 @@ var AppModule = /** @class */ (function () {
                 _item_items_component__WEBPACK_IMPORTED_MODULE_5__["ItemsComponent"],
                 _item_item_detail_component__WEBPACK_IMPORTED_MODULE_6__["ItemDetailComponent"],
                 _bus_bus_component__WEBPACK_IMPORTED_MODULE_7__["BusComponent"],
-                _CarritoCompra_CarritoCompra_component__WEBPACK_IMPORTED_MODULE_2__["CarritoCompraComponent"]
+                _CarritoCompra_CarritoCompra_component__WEBPACK_IMPORTED_MODULE_2__["CarritoCompraComponent"],
+                _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_8__["FormularioComponent"]
             ],
             providers: [],
             schemas: [
@@ -452,8 +502,8 @@ var BusComponent = /** @class */ (function () {
         this.Asientos_sel = [];
         this.ConfiguracionIOScol4 = [{ tamañomenora320: 43, tamañoentre320y375: 55, tamañomayora375: 65 }];
         this.ConfiguracionIOScol5 = [{ tamañomenora320: 27, tamañoentre320y375: 35, tamañomayora375: 43 }];
-        this.ConfiguracionAndroidcol4 = [{ tamañomenora320: 68, tamañomayora350: 82, tamañomayora400: 80 }];
-        this.ConfiguracionAndroidcol5 = [{ tamañomenora320: 50, tamañomayora350: 60, tamañomayora400: 65 }];
+        this.ConfiguracionAndroidcol4 = [{ tamañomenora320: 58, tamañomayora350: 75, tamañomayora400: 80 }];
+        this.ConfiguracionAndroidcol5 = [{ tamañomenora320: 48, tamañomayora350: 60, tamañomayora400: 65 }];
     }
     BusComponent.prototype.ngOnInit = function () {
         this.anchoPantalla = tns_core_modules_platform_platform__WEBPACK_IMPORTED_MODULE_2__["screen"].mainScreen.widthDIPs;

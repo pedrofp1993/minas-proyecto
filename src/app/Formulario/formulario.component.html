@@ -52,7 +52,7 @@
         <StackLayout horizontalAlignment="center" orientation="horizontal" >
             <TextField class= "fiel2" ></TextField>
         </StackLayout>
-        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+        <StackLayout orientation="horizontal" >
             <label class="texto2" text="Fecha de nacimiento:" ></label>
             <label class="texto" text="Edad:" ></label>
         </StackLayout>
@@ -60,5 +60,40 @@
             <TextField class= "fiel3" ></TextField>
             <TextField class= "fiel3" ></TextField>
         </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Nacionalidad:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <ListPicker [items]="nacionalidad" selectedIndex="0" width=75%></ListPicker>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Telefono de contacto:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <TextField class= "fiel2" ></TextField>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="E-mail:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <TextField class= "fiel2" ></TextField>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Empresa de referencia:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <TextField class= "fiel2" ></TextField>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <label class="texto" text="Pelicula:" ></label>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <ListPicker [items]="peliculas" selectedIndex="0" width=75%></ListPicker>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" orientation="horizontal" >
+                <Button col="0" row="2" text="Descartar Asiento" class="btn btn-primary"></Button>
+                <Button col="0" row="2" text="Confirmar Asiento" class="btn btn-primary"></Button>
+        </StackLayout>
+        
     </StackLayout>
 </scrollView>
