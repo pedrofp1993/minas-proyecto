@@ -8,7 +8,7 @@ import { ItemDetailComponent } from "./item/item-detail.component";
 import { BusComponent } from './bus/bus.component';
 import { FormularioComponent } from './Formulario/formulario.component';
 // Uncomment and add to NgModule imports if you need to use two-way binding
-// import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 // Uncomment and add to NgModule imports if you need to use the H ttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -19,7 +19,7 @@ import { FormularioComponent } from './Formulario/formulario.component';
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,NativeScriptFormsModule
     ],
     declarations: [
         AppComponent,

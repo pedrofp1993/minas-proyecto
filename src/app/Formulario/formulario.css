@@ -1,28 +1,26 @@
   .fiel{
-    border-width: 3px;
     width:15%;
-    margin-top:10px;
+    margin-top:10em;
   }
   .fiel2{
       width:75%;
-      margin-top:10px;
-      border-width: 3px;
+      margin-top:10em;
   }
   .fiel3{
-    width:38%;
-    margin-top:10px;
-    border-width: 3px;
-    margin-left:20px;
+    width:35%;
+    margin-top:10em;
+    margin-left:10em;
+    margin-right:10em;
     }
   .texto{
       vertical-align: middle;
-      margin-top:15px;
-      margin-right: 10px;
-      margin-left  : 10px;
+      margin-top:15em;
+      margin-right: 10em;
+      margin-left  : 10em;
   }
   .texto2{
     vertical-align: middle;
-    margin-top:15px;
+    margin-top:15em;
     margin-left:12%;
     margin-right:7%;
 }
