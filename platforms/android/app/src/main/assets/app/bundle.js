@@ -225,7 +225,7 @@ var CarritoCompraComponent = /** @class */ (function () {
 /***/ "./app/Formulario/formulario.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<scrollView>\r\n    <StackLayout  orientation=\"vertical\"class=\"form\">\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <label class=\"texto\" text=\"Piso:\" ></label>\r\n            <TextField class= \"input input-border\" ></TextField>\r\n            <label class=\"texto\" text=\"Zona:\" ></label>\r\n            <TextField class= \"fiel\" ></TextField>\r\n            <label class=\"texto\" text=\"Asiento:\" ></label>\r\n        </StackLayout> \r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Origen:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <ListPicker [items]=\"agencia_origen\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Destino:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <ListPicker [items]=\"agencia_destino\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"tipos_documentos\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"tipos_documentos\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Documento de Identidad\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"tipos_documentos\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" class=\"input-field\">\r\n                <TextField hint=\"Ingrese su n° de documento\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Apellido Paterno:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <TextField hint=\"Ingrese su apellido paterno\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Apellido Materno:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField hint=\"Ingrese su apellido materno\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Nombres:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <TextField hint=\"Ingrese sus nombres\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout orientation=\"horizontal\" >\r\n            <label class=\"texto2\" text=\"Fecha de nacimiento:\" ></label>\r\n            <label class=\"texto\" text=\"Edad:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <TextField hint=\"Ingrese su fecha de nacimiento\" class= \"input input-border\" ></TextField>\r\n            <TextField hint=\"Ingrese su edad\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Nacionalidad:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"nacionalidad\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Telefono de contacto:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField hint=\"Ingrese su telefono de contacto\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"E-mail:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField hint=\"Ingrese su e-mail\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Empresa de referencia:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField hint=\"Ingrese su empresa de referencia\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Pelicula:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"peliculas\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <Button col=\"0\" row=\"2\" text=\"Descartar Asiento\" class=\"btn btn-primary\"></Button>\r\n                <Button col=\"0\" row=\"2\" text=\"Confirmar Asiento\" class=\"btn btn-primary\"></Button>\r\n        </StackLayout>\r\n        \r\n    </StackLayout>\r\n</scrollView>"
+module.exports = "<scrollView>\r\n        \r\n    <StackLayout  orientation=\"vertical\"class=\"form\"> \r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <label class=\"texto\" text=\"Piso:\" ></label>\r\n            <TextField class= \"input input-border\" ></TextField>\r\n            <label class=\"texto\" text=\"Zona:\" ></label>\r\n            <TextField class= \"fiel\" ></TextField>\r\n            <label class=\"texto\" text=\"Asiento:\" ></label>\r\n        </StackLayout> \r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Origen:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField (tap)=\"getagenciaorigen()\" hint=\"Ingrese la agencia origen\" class= \"input input-border\" [text]=\"agencia_sel_ori\" ></TextField>\r\n        </StackLayout>  \r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Destino:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField (tap)=\"getagenciadestino()\" hint=\"Ingrese la agencia destino\" class= \"input input-border\" [text]=\"agencia_sel_dest\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"tipos_documentos\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"tipos_documentos\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Documento de Identidad\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField (tap)=\"getagenciadestino()\" hint=\"Ingrese la agencia destino\" class= \"input input-border\" [text]=\"agencia_sel_dest\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" class=\"input-field\">\r\n                <TextField hint=\"Ingrese su n° de documento\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Apellido Paterno:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <TextField hint=\"Ingrese su apellido paterno\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Apellido Materno:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField hint=\"Ingrese su apellido materno\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Nombres:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <TextField hint=\"Ingrese sus nombres\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout orientation=\"horizontal\" >\r\n            <label class=\"texto2\" text=\"Fecha de nacimiento:\" ></label>\r\n            <label class=\"texto\" text=\"Edad:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n            <TextField hint=\"Ingrese su fecha de nacimiento\" class= \"input input-border\" ></TextField>\r\n            <TextField hint=\"Ingrese su edad\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Nacionalidad:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"nacionalidad\" selectedIndex=\"0\" width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Telefono de contacto:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField hint=\"Ingrese su telefono de contacto\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"E-mail:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField hint=\"Ingrese su e-mail\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Empresa de referencia:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <TextField hint=\"Ingrese su empresa de referencia\" class= \"input input-border\" ></TextField>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <label class=\"texto\" text=\"Pelicula:\" ></label>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <ListPicker [items]=\"peliculas\" selectedIndex=\"0\"opened=\"dropDownOpened\" closed=\"dropDownClosed\" \r\n                selectedIndexChanged=\"dropDownSelectedIndexChanged\"\r\n                row=\"0\" colSpan=\"2\"8 width=75%></ListPicker>\r\n        </StackLayout>\r\n        <StackLayout horizontalAlignment=\"center\" orientation=\"horizontal\" >\r\n                <Button col=\"0\" row=\"2\" text=\"Descartar Asiento\" class=\"btn btn-primary\"></Button>\r\n                <Button col=\"0\" row=\"2\" text=\"Confirmar Asiento\" class=\"btn btn-primary\"></Button>\r\n        </StackLayout>\r\n        \r\n    </StackLayout>\r\n</scrollView>\r\n"
 
 /***/ }),
 
@@ -236,15 +236,66 @@ module.exports = "<scrollView>\r\n    <StackLayout  orientation=\"vertical\"clas
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormularioComponent", function() { return FormularioComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/tns-core-modules/ui/page/page.js");
+/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var nativescript_angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/nativescript-angular/router/index.js");
+/* harmony import */ var nativescript_angular_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("../node_modules/nativescript-angular/modal-dialog.js");
+/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modals_HomeModalView_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./app/modals/HomeModalView.component.ts");
+
+
+
+
+
 
 var FormularioComponent = /** @class */ (function () {
-    function FormularioComponent() {
-        this.agencia_origen = ["Arequipa", "Lima", "Guayaquil"];
-        this.agencia_destino = ["Arequipa", "Lima", "Guayaquil"];
-        this.tipos_documentos = ["DNI", "CI", "CC", "TI", "CE"];
+    function FormularioComponent(_vcRef, _modalService, _page, router, _activeRoute) {
+        this._vcRef = _vcRef;
+        this._modalService = _modalService;
+        this._page = _page;
+        this.router = router;
+        this._activeRoute = _activeRoute;
         this.nacionalidad = ["Peruana", "Argentina", "Alemana"];
         this.peliculas = ["Flash Gordon", "Dragon ball Evolution", "Sandra Bullock con una venda en los ojos"];
+        this.tipo_listpicker = 1;
     }
+    FormularioComponent.prototype.onTap = function () {
+        var options = {
+            viewContainerRef: this._vcRef,
+            context: this.tipo_listpicker,
+            fullscreen: false
+        };
+        return this._modalService.showModal(_modals_HomeModalView_component__WEBPACK_IMPORTED_MODULE_5__["HomeModalViewComponent"], options);
+    };
+    FormularioComponent.prototype.getagenciaorigen = function () {
+        var _this = this;
+        this.onTap().then(function (result) {
+            if (_this.validate(result)) {
+                _this.agencia_sel_ori = result;
+            }
+        });
+    };
+    FormularioComponent.prototype.getagenciadestino = function () {
+        var _this = this;
+        this.onTap().then(function (result) {
+            if (_this.validate(result)) {
+                _this.agencia_sel_dest = result;
+            }
+        });
+    };
+    FormularioComponent.prototype.gettipodedocumento = function () {
+        var _this = this;
+        this.onTap().then(function (result) {
+            if (_this.validate(result)) {
+                _this.tipo_documento_sel = result;
+            }
+        });
+    };
+    FormularioComponent.prototype.validate = function (result) {
+        return !!result;
+    };
     FormularioComponent.prototype.ngOnInit = function () {
     };
     FormularioComponent = __decorate([
@@ -252,7 +303,8 @@ var FormularioComponent = /** @class */ (function () {
             selector: "ns-details",
             template: __webpack_require__("./app/Formulario/formulario.component.html"),
             styles: [__webpack_require__("./app/Formulario/formulario.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_4__["ModalDialogService"], tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_1__["Page"], nativescript_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterExtensions"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
     ], FormularioComponent);
     return FormularioComponent;
 }());
@@ -282,6 +334,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _item_item_detail_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./app/item/item-detail.component.ts");
 /* harmony import */ var _bus_bus_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./app/bus/bus.component.ts");
 /* harmony import */ var _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./app/Formulario/formulario.component.ts");
+/* harmony import */ var _modals_HomeModalView_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./app/modals/HomeModalView.component.ts");
+
 
 
 
@@ -296,7 +350,16 @@ var routes = [
     { path: "item", component: _item_items_component__WEBPACK_IMPORTED_MODULE_3__["ItemsComponent"] },
     { path: "bus", component: _bus_bus_component__WEBPACK_IMPORTED_MODULE_5__["BusComponent"] },
     { path: "CarritoCompra", component: _CarritoCompra_CarritoCompra_component__WEBPACK_IMPORTED_MODULE_2__["CarritoCompraComponent"] },
-    { path: "formulario", component: _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_6__["FormularioComponent"] }
+    { path: "formulario", component: _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_6__["FormularioComponent"] },
+    { path: "homemodal", component: _modals_HomeModalView_component__WEBPACK_IMPORTED_MODULE_7__["HomeModalViewComponent"] },
+    { path: "modal-view-actionbar",
+        component: _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_6__["FormularioComponent"],
+        data: { title: "Main page" },
+        children: [
+            {
+                path: "modal-view", component: _modals_HomeModalView_component__WEBPACK_IMPORTED_MODULE_7__["HomeModalViewComponent"]
+            }
+        ] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -361,8 +424,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _item_item_detail_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./app/item/item-detail.component.ts");
 /* harmony import */ var _bus_bus_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./app/bus/bus.component.ts");
 /* harmony import */ var _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("./app/Formulario/formulario.component.ts");
-/* harmony import */ var nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("../node_modules/nativescript-angular/forms/index.js");
-/* harmony import */ var nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modals_HomeModalView_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("./app/modals/HomeModalView.component.ts");
+/* harmony import */ var nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("../node_modules/nativescript-angular/forms/index.js");
+/* harmony import */ var nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("../node_modules/nativescript-angular/modal-dialog.js");
+/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_11__);
+
 
 
 
@@ -373,6 +440,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
+
 
 // Uncomment and add to NgModule imports if you need to use the H ttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -389,7 +457,7 @@ var AppModule = /** @class */ (function () {
             ],
             imports: [
                 nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_1__["NativeScriptModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_9__["NativeScriptFormsModule"]
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_10__["NativeScriptFormsModule"]
             ],
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
@@ -397,9 +465,10 @@ var AppModule = /** @class */ (function () {
                 _item_item_detail_component__WEBPACK_IMPORTED_MODULE_6__["ItemDetailComponent"],
                 _bus_bus_component__WEBPACK_IMPORTED_MODULE_7__["BusComponent"],
                 _CarritoCompra_CarritoCompra_component__WEBPACK_IMPORTED_MODULE_2__["CarritoCompraComponent"],
-                _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_8__["FormularioComponent"]
+                _Formulario_formulario_component__WEBPACK_IMPORTED_MODULE_8__["FormularioComponent"],
+                _modals_HomeModalView_component__WEBPACK_IMPORTED_MODULE_9__["HomeModalViewComponent"]
             ],
-            providers: [],
+            providers: [nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_11__["ModalDialogService"]],
             schemas: [
                 _angular_core__WEBPACK_IMPORTED_MODULE_0__["NO_ERRORS_SCHEMA"]
             ]
@@ -866,6 +935,57 @@ var ItemsComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_item_service__WEBPACK_IMPORTED_MODULE_1__["ItemService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], ItemsComponent);
     return ItemsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./app/modals/HomeModalView.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<StackLayout>\r\n    <ListPicker id=\"guestPicker\" [items]=\"agencia_origen\" selectedIndex = \"0\" width=\"85%\" (selectedIndexChange)=\"selectedIndexChanged($event)\"></ListPicker>\r\n    <button text=\"Confirmas Agencia\" class=\"btn btn-primary\" (tap)=\"registrar_agencia()\"></button>\r\n</StackLayout>\r\n<StackLayout>\r\n    <ListPicker id=\"guestPicker\" [items]=\"agencia_origen\" selectedIndex = \"0\" width=\"85%\" (selectedIndexChange)=\"selectedIndexChanged($event)\"></ListPicker>\r\n    <button text=\"Confirmas Agencia\" class=\"btn btn-primary\" (tap)=\"registrar_agencia()\"></button>\r\n</StackLayout>"
+
+/***/ }),
+
+/***/ "./app/modals/HomeModalView.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeModalViewComponent", function() { return HomeModalViewComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/modal-dialog.js");
+/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var HomeModalViewComponent = /** @class */ (function () {
+    function HomeModalViewComponent(params) {
+        this.params = params;
+        this.agencia_origen = ["Arequipa", "Lima", "Guayaquil"];
+        this.tipos_documentos = ["DNI", "CI", "CC", "TI", "CE"];
+        this.tipo_listpicker = params.context;
+        console.log(this.tipo_listpicker);
+    }
+    HomeModalViewComponent.prototype.ngOnInit = function () {
+    };
+    HomeModalViewComponent.prototype.selectedIndexChanged = function (args) {
+        var picker = args.object;
+        this.agencia_sel = this.agencia_origen[picker.selectedIndex];
+        console.log(this.agencia_sel);
+        console.log(this.agencia_origen[picker.selectedIndex]);
+    };
+    HomeModalViewComponent.prototype.registrar_agencia = function () {
+        this.params.closeCallback(this.agencia_sel);
+    };
+    HomeModalViewComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "ns-details",
+            template: __webpack_require__("./app/modals/HomeModalView.component.html")
+        }),
+        __metadata("design:paramtypes", [nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__["ModalDialogParams"]])
+    ], HomeModalViewComponent);
+    return HomeModalViewComponent;
 }());
 
 

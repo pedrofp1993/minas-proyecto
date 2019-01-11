@@ -38,3 +38,4 @@ C:\Users\psistemas\Documents\minas-master\platforms\android\app\build\exploded-d
 C:\Users\psistemas\Documents\minas-master\platforms\android\app\build\exploded-dependencies\7\classes.jar
 C:\Users\psistemas\Documents\minas-master\platforms\android\app\build\exploded-dependencies\8\classes.jar
 C:\Users\psistemas\Documents\minas-master\platforms\android\app\build\exploded-dependencies\9\classes.jar
+C:\Users\psistemas\Documents\minas-master\platforms\android\app\build\intermediates\javac\debug

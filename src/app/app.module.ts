@@ -7,8 +7,11 @@ import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import { BusComponent } from './bus/bus.component';
 import { FormularioComponent } from './Formulario/formulario.component';
+import { HomeModalViewComponent } from './modals/HomeModalView.component';
+import { ModalDialogParams } from "nativescript-angular/modal-dialog";
 // Uncomment and add to NgModule imports if you need to use two-way binding
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { ModalDialogService } from "nativescript-angular/modal-dialog";
 
 // Uncomment and add to NgModule imports if you need to use the H ttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -27,9 +30,10 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
         ItemDetailComponent,
         BusComponent,
         CarritoCompraComponent,
-        FormularioComponent
+        FormularioComponent,
+        HomeModalViewComponent
     ],
-    providers: [],
+    providers: [ModalDialogService],
     schemas: [
         NO_ERRORS_SCHEMA
     ]

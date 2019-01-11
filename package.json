@@ -22,6 +22,7 @@
         "@angular/platform-browser-dynamic": "~7.0.0",
         "@angular/router": "~7.0.0",
         "nativescript-angular": "~7.0.0",
+        "nativescript-drop-down": "^4.0.1",
         "nativescript-theme-core": "~1.0.4",
         "node-modules": "^1.0.1",
         "reflect-metadata": "~0.1.8",

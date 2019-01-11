@@ -1,5 +1,6 @@
 <scrollView>
-    <StackLayout  orientation="vertical"class="form">
+        
+    <StackLayout  orientation="vertical"class="form"> 
         <StackLayout horizontalAlignment="center" orientation="horizontal" >
             <label class="texto" text="Piso:" ></label>
             <TextField class= "input input-border" ></TextField>
@@ -11,13 +12,13 @@
                 <label class="texto" text="Origen:" ></label>
         </StackLayout>
         <StackLayout horizontalAlignment="center" orientation="horizontal" >
-            <ListPicker [items]="agencia_origen" selectedIndex="0" width=75%></ListPicker>
-        </StackLayout>
+                <TextField (tap)="getagenciaorigen()" hint="Ingrese la agencia origen" class= "input input-border" [text]="agencia_sel_ori" ></TextField>
+        </StackLayout>  
         <StackLayout horizontalAlignment="center" orientation="horizontal" >
                 <label class="texto" text="Destino:" ></label>
         </StackLayout>
         <StackLayout horizontalAlignment="center" orientation="horizontal" >
-            <ListPicker [items]="agencia_destino" selectedIndex="0" width=75%></ListPicker>
+                <TextField (tap)="getagenciadestino()" hint="Ingrese la agencia destino" class= "input input-border" [text]="agencia_sel_dest" ></TextField>
         </StackLayout>
         <StackLayout horizontalAlignment="center" orientation="horizontal" >
                 <ListPicker [items]="tipos_documentos" selectedIndex="0" width=75%></ListPicker>
@@ -29,7 +30,7 @@
                 <label class="texto" text="Documento de Identidad" ></label>
         </StackLayout>
         <StackLayout horizontalAlignment="center" orientation="horizontal" >
-                <ListPicker [items]="tipos_documentos" selectedIndex="0" width=75%></ListPicker>
+                <TextField (tap)="getagenciadestino()" hint="Ingrese la agencia destino" class= "input input-border" [text]="agencia_sel_dest" ></TextField>
         </StackLayout>
         <StackLayout horizontalAlignment="center" orientation="horizontal" class="input-field">
                 <TextField hint="Ingrese su n° de documento" class= "input input-border" ></TextField>
@@ -88,7 +89,9 @@
                 <label class="texto" text="Pelicula:" ></label>
         </StackLayout>
         <StackLayout horizontalAlignment="center" orientation="horizontal" >
-                <ListPicker [items]="peliculas" selectedIndex="0" width=75%></ListPicker>
+                <ListPicker [items]="peliculas" selectedIndex="0"opened="dropDownOpened" closed="dropDownClosed" 
+                selectedIndexChanged="dropDownSelectedIndexChanged"
+                row="0" colSpan="2"8 width=75%></ListPicker>
         </StackLayout>
         <StackLayout horizontalAlignment="center" orientation="horizontal" >
                 <Button col="0" row="2" text="Descartar Asiento" class="btn btn-primary"></Button>
